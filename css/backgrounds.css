@@ -1,0 +1,9 @@
+.main_background{
+  height: 724px;
+  width: 100%;
+}
+.main_background img{
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
