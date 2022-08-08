@@ -1,0 +1,22 @@
+.footer_upper{
+  height: 100%;
+  background-color: #1F1A17;
+  width: 100%;
+}
+
+.footer_upper_select{
+
+}
+
+.footer_upper_select a h1{
+  text-align: left;
+font: normal normal 800 25px/55px Inter;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: uppercase;
+
+}
+
+.footer_upper_select a{
+  text-decoration: none;
+}
