@@ -1,0 +1,26 @@
+.info_div {
+  display: flex;
+  flex-direction: column;
+}
+.info_underdiv {
+  display: flex;
+  flex-direction: row;
+}
+.info_underdiv p {
+  text-align: center;
+  font: normal normal 800 22px/26px Inter;
+  letter-spacing: 0px;
+  color: #1f1a17;
+}
+.info_underdiv2 h2 {
+  text-align: center;
+  font: normal normal 600 60px/72px Inter;
+  letter-spacing: 0px;
+  color: #1f1a17;
+}
+.info_underdiv2 h1 {
+  text-align: center;
+  font: normal normal 800 60px/72px Inter;
+  letter-spacing: 0px;
+  color: #1f1a17;
+}
