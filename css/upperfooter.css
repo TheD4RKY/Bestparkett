@@ -20,3 +20,18 @@ text-transform: uppercase;
 .footer_upper_select a{
   text-decoration: none;
 }
+
+.upper_footer_grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.upper_footer_flexcol{
+  display: flex;
+  flex-direction: column;
+}
+
+.upper_footer_flexrow{
+display: flex;
+flex-direction: row;
+}
