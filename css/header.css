@@ -1,0 +1,9 @@
+.header_flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.header_box{
+  width: 383px;
+  height: 447px;
+}
