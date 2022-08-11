@@ -1,4 +1,5 @@
 .footer_lower{
+   padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
 
@@ -6,9 +7,26 @@
 .footer_lower_div{
   height: 200px;
   width: 280px;
+  padding-top: 40px;
 }
 
+.lower_stroke{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 95px;
+  height: 4px;
+}
+.lower_stroke1{
+  background: #1F1A17 0% 0% no-repeat padding-box;
+}
+.lower_stroke3{
+background: #DA8A44 0% 0% no-repeat padding-box;
 
+}
+
+.lower_stroke2{
+background: #DA251D 0% 0% no-repeat padding-box;
+}
 .footer_lower_div1 h2, .footer_lower_div2 h2, .footer_lower_div3 h2{
   text-align: left;
   font: normal normal bold 22px/30px Inter;

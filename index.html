@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/mainheader.css" />
     <link rel="stylesheet" href="./css/promotion.css">
+    <link rel="stylesheet" href="./css/form.css">
   </head>
   <body style="max-width: 1920px; margin: auto">
     <!-- Navigační sekce -->
@@ -29,12 +30,12 @@
         </a>
       </div>
       <div class="navbar_">
-        <a href="#">O NÁS</a>
-        <a href="#">CO UMÍME</a>
+        <a href="./o_nas.html">O NÁS</a>
+        <a href="./dalsi_produkty_sluzby.html">CO UMÍME</a>
         <a href="#">REFERENCE</a>
         <a href="#">AKČNÍ NABÍDKA</a>
-        <a href="#">KE STAŽENÍ</a>
-        <a href="#">KONTAKTY</a>
+        <a href="./ke_stazeni.html">KE STAŽENÍ</a>
+        <a href="./kontakty.html">KONTAKTY</a>
       </div>
       <div class="navbar_">
         <p>CZ</p>
@@ -214,6 +215,7 @@
 </section>
 
     <section class="element_border info_">
+      <div style="width: 324px; height:7px; background-color: #da8a44; margin-top: 4rem; margin-left: auto; margin-right: auto;"></div>
       <div class="info_underdiv2">
         <h2>proč zvolit</h2>
         <h1>bestparkett?</h1>
@@ -237,23 +239,31 @@
       </div>
     </section>
     <section class="element_border">
-      <div>
+      <div class="form_upper">
+      <div class="form_uppertext">
         <h1>kontaktujte nás</h1>
         <h2>Rádi vymyslíme řešení i pro vás.</h2>
       </div>
-      <div>
+      <div class="form_upperbutton">
         <button>všechny kontakty</button>
       </div>
-      <form action="">
+      </div>
+      <form action="" >
+        <div class="form">
+        <div class="form_inputs">
         <input type="text" />
         <input type="text" />
         <input type="text" />
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <textarea class="form_textfield" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form_lower">
         <p>
           Odesláním formuláře souhlasíte se zpracováním osobních údajů. Více
           informací o zpracování osobních údajů a GDPR.
         </p>
         <button>odeslat zprávu</button>
+        </div>
       </form>
     </section>
     <footer>
@@ -393,7 +403,8 @@
       <section class="footer_lower element_border">
         <div>
           <div class="footer_lower_div">
-            <h1>sídlo firmy a prodejní sklad</h1>
+            <h1>sídlo firmy <br> a prodejní sklad</h1>
+            <div class="lower_stroke1 lower_stroke"></div>
             <p>BESTPARKETT, s.r.o.</p>
             <p>Valtická 1710/33</p>
             <p>692 01 Mikulov</p>
@@ -410,11 +421,13 @@
 
         <div>
           <div class="footer_lower_div">
-            <h1>sídlo firmy a prodejní sklad</h1>
+            <h1>SHOWROOM <br> BRNO</h1>
+            <div class="lower_stroke2 lower_stroke"></div>
             <p>BESTPARKETT, s.r.o.</p>
-            <p>Valtická 1710/33</p>
-            <p>692 01 Mikulov</p>
+            <p>Purkyňova 45</p>
+            <p>612 00 Brno</p>
           </div>
+          
           <div class="footer_lower_div2 footer_lower_div">
             <h2>detail showroomu trasa</h2>
             <p>Před návštěvou si prosím domluvte schůzku na tel.:</p>
@@ -422,8 +435,10 @@
           </div>
         </div>
 
+        <div>
         <div class="footer_lower_div">
-          <h1>showroom vídeň</h1>
+          <h1>showroom <br> vídeň</h1>
+          <div class="lower_stroke3 lower_stroke"></div>
           <p>SWN Moravia s.r.o.</p>
           <p>BESTPARKETT, s.r.o.</p>
           <p>Prager Strasse 80-86</p>
@@ -431,6 +446,7 @@
         </div>
         <div class="footer_lower_div3 footer_lower_div">
           <h2>DETAIL SHOWROOMU TRASA</h2>
+        </div>
         </div>
       </section>
     </footer>
