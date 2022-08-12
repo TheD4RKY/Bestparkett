@@ -1,0 +1,14 @@
+.ke_stazeni_section{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.ke_stazeni_section p{
+  text-align: left;
+font: normal normal 800 23px/29px Inter;
+letter-spacing: 0px;
+color: #DA251D;
+opacity: 1;
+  
+}

@@ -1,0 +1,21 @@
+.dalsi_section{
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.dalsi_section h1{
+
+  text-align: left;
+font: normal normal 800 45px/50px Inter;
+letter-spacing: 0px;
+color: #DA251D;
+}
+
+.dalsi_section p{
+  text-align: left;
+font: normal normal normal 18px/25px Inter;
+letter-spacing: 0px;
+color: #1F1A17;
+}
