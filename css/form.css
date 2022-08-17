@@ -1,5 +1,5 @@
 .form{
-display: flex;.
+display: flex;
 flex-direction: row;
 height: 301px;
 
@@ -105,7 +105,10 @@ opacity: 1;
 }
 
 
-@media (max-width: 1000px){
+
+@media (min-width: 500px) and (max-width: 1000px){
+
+
 .form{
     display: flex;
     flex-direction: column;
@@ -122,11 +125,64 @@ opacity: 1;
 }
 .form{
     width: 100%;
+
+    height: auto;
+
 }
 .form_inputs input{
     width: inherit;
 }
 .form_lower{
-    padding-top: 8rem;
+    padding-top: 3rem;
 }
+
+.form_upper{flex-direction: column;}
+.form_upperbutton{
+    margin-inline: auto;
+    padding-bottom: 2rem;
+}
+
+
+}
+
+
+@media (max-width: 500px){
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     gap: 15px;
+
+}
+.form_textfield{
+    width: inherit;
+}
+.form_inputs{
+    width: inherit;
+}
+.form{
+    width: 100%;
+    height: auto;
+}
+.form_inputs input{
+    width: inherit;
+}
+.form_lower{
+    padding-top: 3rem;
+}
+.form_upper{flex-direction: column;}
+.form_upperbutton{
+    margin-inline: auto;
+    padding-bottom: 2rem;
+}
+
+.form_upperbutton button{
+    
+    width: 314px;
+}
+
+
 }

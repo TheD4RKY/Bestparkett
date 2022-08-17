@@ -28,4 +28,16 @@ opacity: 1;
 
 .podlahy_detail_text_center p{
   text-align: center !important;
+  font: normal normal 800 22px/26px Inter;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1748px) {
+  .podlahy_detail{
+    flex-direction: column;
+  }
+  .podlahy_detail_row{
+    flex-direction: column;
+    margin-inline: auto;
+  }
 }

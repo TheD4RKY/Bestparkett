@@ -83,4 +83,28 @@ height: 14px;
     margin-bottom: 1rem;
     position: relative;
   }
+
+}
+
+@media (max-width:500px) {
+
+    .header_box_underdiv{
+        width: inherit;
+    
+  }
+
+  .header_box_underdiv img{
+        width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
+
+  .header_box_stroke{
+    width: inherit;
+  }
+
+  .header_box{
+    width: 300px;
+  }
+
 }

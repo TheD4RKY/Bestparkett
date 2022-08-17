@@ -43,3 +43,19 @@ border: none;
   justify-content: center;
   align-items: center;
 }
+
+
+
+@media (max-width: 500px){
+
+.main_header_middle h1{
+  font-size: 60px;
+}
+.main_header_middle h2{
+  font-size: 60px;
+}
+
+.main_header_middle button{
+  width: 259px;
+}
+}
