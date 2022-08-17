@@ -70,3 +70,17 @@ height: 14px;
   align-items: center;
   margin: auto;
 }
+
+@media screen and (max-width: 1850px){
+  .header_flex{
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .header_box{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+}

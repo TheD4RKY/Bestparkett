@@ -103,3 +103,30 @@ border: none;
 background: #DA8A44 0% 0% no-repeat padding-box;
 opacity: 1;
 }
+
+
+@media (max-width: 1000px){
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     gap: 15px;
+
+}
+.form_textfield{
+    width: inherit;
+}
+.form_inputs{
+    width: inherit;
+}
+.form{
+    width: 100%;
+}
+.form_inputs input{
+    width: inherit;
+}
+.form_lower{
+    padding-top: 8rem;
+}
+}
