@@ -14,11 +14,88 @@
     <link rel="stylesheet" href="./css/news.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/mainheader.css" />
-    <link rel="stylesheet" href="./css/promotion.css">
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/promotion.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link rel="stylesheet" href="./css/mobilenav.css" />
+    <link rel="stylesheet" href="./css/copyright.css" />
+    <link rel="stylesheet" href="./css/humburger.css" />
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/navtoggle.js"></script>
   </head>
-  <body style="max-width: 1920px; margin: auto">
+  <body style="max-width: 1920px; margin: auto" onresize="resize()">
     <!-- Navigační sekce -->
+
+    <div class="menu_overlay" id="translatetoggle">
+      <div class="divbodyborder">
+        <div class="flexlist">
+          <ul class="list">
+            <li class="listactive">
+              <a onclick="toggle(1);"
+                >KATEGORIE
+                <img
+                  src="./public/arrowrev.svg"
+                  style="
+                    z-index: 101;
+                    padding-left: 1rem;
+                    padding-bottom: 0.3rem;
+                  "
+              /></a>
+            </li>
+            <li class="list1"><a href="./o_nas.html">O NÁS</a></li>
+            <li class="list1">
+              <a href="./dalsi_produkty_sluzby.html">CO UMÍME</a>
+            </li>
+            <li class="list1"><a href="#">AKČNÍ NABÍDKA</a></li>
+            <li class="list1"><a href="./kontakty.html">KONTAKTY</a></li>
+          </ul>
+
+          <ul class="list">
+            <li class="listactive">
+              <a onclick="toggle(2);"
+                >OSTATNÍ
+                <img
+                  src="./public/arrowrev.svg"
+                  style="
+                    z-index: 101;
+                    padding-left: 1rem;
+                    padding-bottom: 0.3rem;
+                  "
+              /></a>
+            </li>
+            <li class="list2"><a href="ke_stazeni.html">KE STAŽENÍ</a></li>
+            <li class="list2"><a href="#">REFERENCE</a></li>
+          </ul>
+
+          <ul class="list">
+            <li class="listactive">
+              <a onclick="toggle(3);"
+                >KONTAKTY
+                <img
+                  src="./public/arrowrev.svg"
+                  style="
+                    z-index: 101;
+                    padding-left: 1rem;
+                    padding-bottom: 0.3rem;
+                  "
+              /></a>
+            </li>
+            <li class="list3">
+              <a href="https://www.instagram.com/bestparkett/?hl=en"
+                >FACEBOOK</a
+              >
+            </li>
+            <li class="list3">
+              <a href="https://www.facebook.com/Bestparkett-433970756640379/"
+                >INSTAGRAM</a
+              >
+            </li>
+            <li class="list3"><a href="#">TEL.: +420 774 280 205</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar_ element_border">
       <div class="navbar_">
         <a href="#">
@@ -29,7 +106,7 @@
           />
         </a>
       </div>
-      <div class="navbar_">
+      <div class="navbar_ navbar_items_">
         <a href="./o_nas.html">O NÁS</a>
         <a href="./dalsi_produkty_sluzby.html">CO UMÍME</a>
         <a href="#">REFERENCE</a>
@@ -38,6 +115,11 @@
         <a href="./kontakty.html">KONTAKTY</a>
       </div>
       <div class="navbar_">
+        <div class="container2" onclick="myFunction(this)" style="z-index: 101">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         <p>CZ</p>
       </div>
     </nav>
@@ -67,10 +149,10 @@
           <h1>podlahy</h1>
         </div>
         <div class="header_box_stroke--1 header_box_stroke"></div>
-          <div class="header_box_reposition">
-        <p>dřevěné</p>
-        <p>laminátové</p>
-        <p>vinylové</p>
+        <div class="header_box_reposition">
+          <p>dřevěné</p>
+          <p>laminátové</p>
+          <p>vinylové</p>
         </div>
       </div>
       <div class="header_box">
@@ -79,143 +161,162 @@
           <h1>terasy</h1>
         </div>
         <div class="header_box_stroke--2 header_box_stroke"></div>
-        <div  class="header_box_reposition">
-        <p>dřevěné</p>
-        <p>WPC</p>
-      </div></div>
+        <div class="header_box_reposition">
+          <p>dřevěné</p>
+          <p>WPC</p>
+        </div>
+      </div>
       <div class="header_box">
         <div class="header_box_underdiv">
           <img src="./public/MaskGroup.png" alt="" />
           <h1>speciality</h1>
         </div>
         <div class="header_box_stroke--3 header_box_stroke"></div>
-        <div  class="header_box_reposition">
-        <p>intarsie</p>
-        <p>schody</p>
-        <p>starobylé dřevo</p>
+        <div class="header_box_reposition">
+          <p>intarsie</p>
+          <p>schody</p>
+          <p>starobylé dřevo</p>
         </div>
       </div>
     </section>
 
-    <section class="element_border">
-      <div class="sortiment_flex">
-        <div class="sortiment_grid--1">
-          <div class="sortiment_div">
-            <img src="./public/1.png" alt="" />
-            <p>pokládka</p>
+    <div class="sortiment_img">
+      <img src="./public/procbestparkett.svg" alt="" />
+    </div>
+    <div class="sortiment_bg">
+      <section class="element_border">
+        <div class="sortiment_flex">
+          <div class="sortiment_grid--1">
+            <div class="sortiment_div">
+              <img src="./public/1.png" alt="" />
+              <p>pokládka</p>
+            </div>
+            <div class="sortiment_div">
+              <img src="./public/1.png" alt="" />
+              <p>údržba podlah</p>
+            </div>
+            <div class="sortiment_div">
+              <img src="./public/1.png" alt="" />
+              <p>údržba teras</p>
+            </div>
+            <div class="sortiment_div">
+              <img src="./public/1.png" alt="" />
+              <p>příslušenství k podlahám</p>
+            </div>
+            <div class="sortiment_div">
+              <img src="./public/1.png" alt="" />
+              <p>příslušenství k terasám</p>
+            </div>
           </div>
-          <div class="sortiment_div">
-            <img src="./public/1.png" alt="" />
-            <p>údržba podlah</p>
-          </div>
-          <div class="sortiment_div">
-            <img src="./public/1.png" alt="" />
-            <p>údržba teras</p>
-          </div>
-          <div class="sortiment_div">
-            <img src="./public/1.png" alt="" />
-            <p>příslušenství k podlahám</p>
-          </div>
-          <div class="sortiment_div">
-            <img src="./public/1.png" alt="" />
-            <p>příslušenství k terasám</p>
+          <div class="sortiment_grid--2">
+            <div class="sortiment_div">
+              <img src="./public/1.png" alt="" />
+              <p>renovace dřevěných podlah</p>
+            </div>
+            <div class="sortiment_div">
+              <img src="./public/1.png" alt="" />
+              <p>renovace dřevěných teras</p>
+            </div>
+            <div class="sortiment_div">
+              <img src="./public/1.png" alt="" />
+              <p>dřevěné podlahy a obklady do koupelen</p>
+            </div>
+            <div class="sortiment_div">
+              <img src="./public/1.png" alt="" />
+              <p>dekorativní truhlíky</p>
+            </div>
           </div>
         </div>
-        <div class="sortiment_grid--2">
-          <div class="sortiment_div">
-            <img src="./public/1.png" alt="" />
-            <p>renovace dřevěných podlah</p>
-          </div>
-          <div class="sortiment_div">
-            <img src="./public/1.png" alt="" />
-            <p>renovace dřevěných teras</p>
-          </div>
-          <div class="sortiment_div">
-            <img src="./public/1.png" alt="" />
-            <p>dřevěné podlahy a obklady do koupelen</p>
-          </div>
-          <div class="sortiment_div">
-            <img src="./public/1.png" alt="" />
-            <p>dekorativní truhlíky</p>
-          </div>
+      </section>
+    </div>
+
+    <div class="news_bg">
+      <section class="element_border">
+        <div class="news_header">
+          <h1>aktuality</h1>
+          <button>archiv aktualit</button>
         </div>
-      </div>
-    </section>
-
-    <section class="element_border">
-      <div class="news_header">
-        <h1>aktuality</h1>
-        <button>archiv aktualit</button>
-      </div>
-
-    </section>
-
-    
+      </section>
 
       <section class="element_border news_flex">
-      <div class="aktuality_box">
-        <div class="header_box_underdiv">
-          <img src="./public/MaskGroup.png" alt="" />
-          
-        </div>
-        <div class="header_box_stroke--1 header_box_stroke"></div>
+        <div class="aktuality_box">
+          <div class="header_box_underdiv">
+            <img src="./public/MaskGroup.png" alt="" class="news_box_img" />
+          </div>
+          <div class="header_box_stroke--1 header_box_stroke"></div>
           <div class="news_box_reposition">
-          <h1>stavební veletrh</h1>
-        <h4>22.3.2022</h4>
-        <p>Srdečně všechny zveme na stavení veletrh v rakouském Tullnu</p>
-        <p>více</p>
+            <h1>stavební veletrh</h1>
+            <h4>22.3.2022</h4>
+            <p>Srdečně všechny zveme na stavení veletrh v rakouském Tullnu</p>
+            <p>více</p>
+          </div>
         </div>
-      </div>
-      <div class="aktuality_box">
-        <div class="header_box_underdiv">
-          <img src="./public/MaskGroup.png" alt="" />
-         
+        <div class="aktuality_box">
+          <div class="header_box_underdiv">
+            <img src="./public/MaskGroup.png" alt="" class="news_box_img" />
+          </div>
+          <div class="header_box_stroke--2 header_box_stroke"></div>
+          <div class="news_box_reposition">
+            <h1>stavební veletrh</h1>
+            <h4>22.3.2022</h4>
+            <p>Srdečně všechny zveme na stavení veletrh v rakouském Tullnu</p>
+            <p>více</p>
+          </div>
         </div>
-        <div class="header_box_stroke--2 header_box_stroke"></div>
-        <div  class="news_box_reposition">
-         <h1>stavební veletrh</h1>
-        <h4>22.3.2022</h4>
-        <p>Srdečně všechny zveme na stavení veletrh v rakouském Tullnu</p>
-        <p>více</p>
-      </div></div>
-      <div class="aktuality_box">
-        <div class="header_box_underdiv">
-          <img src="./public/MaskGroup.png" alt="" />
-          
+        <div class="aktuality_box">
+          <div class="header_box_underdiv">
+            <img src="./public/MaskGroup.png" alt="" class="news_box_img" />
+          </div>
+          <div class="header_box_stroke--3 header_box_stroke"></div>
+          <div class="news_box_reposition">
+            <h1>dvouřádkový nadpis</h1>
+            <h4>22.3.2022</h4>
+            <p>Srdečně všechny zveme na stavení veletrh v rakouském Tullnu</p>
+            <p>více</p>
+          </div>
         </div>
-        <div class="header_box_stroke--3 header_box_stroke"></div>
-        <div  class="news_box_reposition">
-        <h1>dvouřádkový nadpis</h1>
-        <h4>22.3.2022</h4>
-        <p>Srdečně všechny zveme na stavení veletrh v rakouském Tullnu</p>
-        <p>více</p>
+      </section>
+    </div>
+
+    <section class="promotion_">
+      <img src="./public/ourrealization.png" alt="naše realizace" />
+      <div class="promotion_div">
+        <div class="promotion_div--upper">
+          <div class="promotion_div--upper-div">
+            <h1>naše realizace</h1>
+            <h3>
+              Inspirujte se našimi <br />
+              realizovanými zakázkami.
+            </h3>
+          </div>
+        </div>
+        <div class="promotion_div--lower">
+          <div class="promotion_div--lower-div">
+            <h1>RD Jablonec nad Nisou</h1>
+            <div class="promotion_div--lower-line"></div>
+            <h2>Použitý materiál</h2>
+            <p>Ebonia Wood maxi duo, UV lak</p>
+            <h3>chci něco podobného</h3>
+            <h3>více realizací</h3>
+          </div>
         </div>
       </div>
     </section>
 
-<section class="promotion_">
-  <img src="./public/ourrealization.png" alt="naše realizace">
-  <div class="promotion_div">
-    <div class="promotion_div--upper">
-      <div class="promotion_div--upper-div">
-      <h1>naše realizace</h1>
-      <h3>Inspirujte se našimi <br> realizovanými zakázkami.</h3>
-    </div></div>
-    <div class="promotion_div--lower">
-      <div class="promotion_div--lower-div">
-      <h1>RD Jablonec nad Nisou</h1>
-      <div class="promotion_div--lower-line"></div>
-      <h2>Použitý materiál</h2>
-      <p>Ebonia Wood maxi duo, UV lak</p>
-      <h3>chci něco podobného</h3>
-      <h3>více realizací</h3>
-      </div>
+    <div class="info_img">
+      <img src="./public/procbestparkett.svg" alt="" class="info_img" />
     </div>
-  </div>
-</section>
-
     <section class="element_border info_">
-      <div style="width: 324px; height:7px; background-color: #da8a44; margin-top: 4rem; margin-left: auto; margin-right: auto;"></div>
+      <div
+        style="
+          width: 299px;
+          height: 7px;
+          background-color: #da8a44;
+          margin-top: 4rem;
+          margin-left: auto;
+          margin-right: auto;
+        "
+      ></div>
       <div class="info_underdiv2">
         <h2>proč zvolit</h2>
         <h1>bestparkett?</h1>
@@ -238,34 +339,42 @@
         </div>
       </div>
     </section>
-    <section class="element_border">
-      <div class="form_upper">
-      <div class="form_uppertext">
-        <h1>kontaktujte nás</h1>
-        <h2>Rádi vymyslíme řešení i pro vás.</h2>
-      </div>
-      <div class="form_upperbutton">
-        <button>všechny kontakty</button>
-      </div>
-      </div>
-      <form action="" >
-        <div class="form">
-        <div class="form_inputs">
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
+    <div class="form_bg">
+      <section class="element_border">
+        <div class="form_upper">
+          <div class="form_uppertext">
+            <h1>kontaktujte nás</h1>
+            <h2>Rádi vymyslíme řešení i pro vás.</h2>
+          </div>
+          <div class="form_upperbutton">
+            <button>všechny kontakty</button>
+          </div>
         </div>
-        <textarea class="form_textfield" name="" id="" cols="30" rows="10"></textarea>
-        </div>
-        <div class="form_lower">
-        <p>
-          Odesláním formuláře souhlasíte se zpracováním osobních údajů. Více
-          informací o zpracování osobních údajů a GDPR.
-        </p>
-        <button>odeslat zprávu</button>
-        </div>
-      </form>
-    </section>
+        <form action="">
+          <div class="form">
+            <div class="form_inputs">
+              <input type="text" />
+              <input type="text" />
+              <input type="text" />
+            </div>
+            <textarea
+              class="form_textfield"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form_lower">
+            <p>
+              Odesláním formuláře souhlasíte se zpracováním osobních údajů. Více
+              informací o zpracování osobních údajů a GDPR.
+            </p>
+            <button>odeslat zprávu</button>
+          </div>
+        </form>
+      </section>
+    </div>
     <footer>
       <section class="footer_upper">
         <div class="element_border upper_footer_flexrow">
@@ -281,7 +390,8 @@
             <div class="grid_row_2 grid_col_1 mobile2">
               <div class="upper_footer_column">
                 <h1>podlahy</h1>
-                <div class="coloredrow"
+                <div
+                  class="coloredrow"
                   style="
                     width: 95px;
                     height: 4px;
@@ -305,17 +415,20 @@
             <div class="grid_row_1 grid_col_2 mobile3">
               <div class="upper_footer_column">
                 <div class="upper_footer_flexrow">
-                  <img
-                    src="./public/facebook.svg"
-                    alt=""
-                    style="max-width: 35px; max-height: 35px"
-                    class="upper_footer_imgpadding"
-                  />
-                  <img
-                    src="./public/instagram.svg"
-                    alt=""
-                    style="max-width: 35px; max-height: 35px"
-                  />
+                  <a
+                    href="https://www.facebook.com/Bestparkett-433970756640379/"
+                    ><img
+                      src="./public/facebook.svg"
+                      alt=""
+                      style="max-width: 35px; max-height: 35px"
+                      class="upper_footer_imgpadding"
+                  /></a>
+                  <a href="https://www.instagram.com/bestparkett/?hl=en"
+                    ><img
+                      src="./public/instagram.svg"
+                      alt=""
+                      style="max-width: 35px; max-height: 35px"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -323,7 +436,8 @@
             <div class="grid_row_2 grid_col_2 mobile4">
               <div class="upper_footer_column">
                 <h1>terasy</h1>
-                <div class="coloredrow"
+                <div
+                  class="coloredrow"
                   style="
                     width: 95px;
                     height: 4px;
@@ -366,7 +480,8 @@
             <div class="grid_row_2 grid_col_3 mobile6">
               <div class="upper_footer_column">
                 <h1>SPECIALITY</h1>
-                <div class="coloredrow"
+                <div
+                  class="coloredrow"
                   style="
                     width: 95px;
                     height: 4px;
@@ -403,7 +518,10 @@
       <section class="footer_lower element_border">
         <div>
           <div class="footer_lower_div">
-            <h1>sídlo firmy <br> a prodejní sklad</h1>
+            <h1>
+              sídlo firmy <br />
+              a prodejní sklad
+            </h1>
             <div class="lower_stroke1 lower_stroke"></div>
             <p>BESTPARKETT, s.r.o.</p>
             <p>Valtická 1710/33</p>
@@ -421,13 +539,16 @@
 
         <div>
           <div class="footer_lower_div">
-            <h1>SHOWROOM <br> BRNO</h1>
+            <h1>
+              SHOWROOM <br />
+              BRNO
+            </h1>
             <div class="lower_stroke2 lower_stroke"></div>
             <p>BESTPARKETT, s.r.o.</p>
             <p>Purkyňova 45</p>
             <p>612 00 Brno</p>
           </div>
-          
+
           <div class="footer_lower_div2 footer_lower_div">
             <h2>detail showroomu trasa</h2>
             <p>Před návštěvou si prosím domluvte schůzku na tel.:</p>
@@ -436,24 +557,29 @@
         </div>
 
         <div>
-        <div class="footer_lower_div">
-          <h1>showroom <br> vídeň</h1>
-          <div class="lower_stroke3 lower_stroke"></div>
-          <p>SWN Moravia s.r.o.</p>
-          <p>BESTPARKETT, s.r.o.</p>
-          <p>Prager Strasse 80-86</p>
-          <p>A-1210 Wien, Rakousko</p>
-        </div>
-        <div class="footer_lower_div3 footer_lower_div">
-          <h2>DETAIL SHOWROOMU TRASA</h2>
-        </div>
+          <div class="footer_lower_div">
+            <h1>
+              showroom <br />
+              vídeň
+            </h1>
+            <div class="lower_stroke3 lower_stroke"></div>
+            <p>SWN Moravia s.r.o.</p>
+            <p>BESTPARKETT, s.r.o.</p>
+            <p>Prager Strasse 80-86</p>
+            <p>A-1210 Wien, Rakousko</p>
+          </div>
+          <div class="footer_lower_div3 footer_lower_div">
+            <h2>DETAIL SHOWROOMU TRASA</h2>
+          </div>
         </div>
       </section>
     </footer>
 
-    <div>
-      <div>2022 © BESTPARKETT s.r.o.</div>
-      <div>webdesign by SYNAPSE/5</div>
+    <div class="copyright_bg">
+      <div class="element_border copyright_">
+        <div>2022 © BESTPARKETT s.r.o.</div>
+        <div>webdesign by SYNAPSE/5</div>
+      </div>
     </div>
   </body>
 </html>

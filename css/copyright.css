@@ -1,0 +1,21 @@
+.copyright_ {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  font: normal normal normal 20px/24px Inter;
+  letter-spacing: 0px;
+  color: #1f1a17;
+}
+
+.copyright_bg {
+  margin-top: 2rem;
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 500px) {
+  .copyright_ {
+    font: normal normal normal 10px/24px Inter;
+  }
+}

@@ -1,3 +1,23 @@
+.sortiment_bg {
+  background: linear-gradient(to bottom, #f7f7f7 100%, transparent 0%);
+  padding-top: 5rem;
+}
+
+.sortiment_img img {
+  position: absolute;
+  margin-left: 0;
+  margin-right: auto;
+  max-width: 936px;
+  margin-top: 32rem;
+  width: 100%;
+}
+.sortiment_img {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-left: 5rem;
+}
+
 .sortiment_grid--1 {
   grid-template-columns: repeat(5, 1fr);
   display: grid;
@@ -10,12 +30,9 @@
 }
 .sortiment_grid--1 div {
   max-width: 230px;
-
-  
 }
 .sortiment_grid--2 div {
   max-width: 230px;
- 
 }
 .sortiment_flex {
   display: flex;
@@ -28,39 +45,53 @@
   font: normal normal 800 22px/26px Inter;
 }
 
-@media (max-width: 1365px){
+@media (max-width: 1365px) {
   .sortiment_grid--1 {
-  grid-template-columns: repeat(3, 1fr);
-  margin-inline: auto;
-}
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline: auto;
+  }
   .sortiment_grid--2 {
     grid-template-columns: repeat(3, 1fr);
-     margin-inline: auto;
+    margin-inline: auto;
+  }
+  .sortiment_img {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-left: 0rem;
   }
 }
 
-@media (min-width: 515px) and (max-width: 1000px){
-
-.sortiment_grid--1 {
-  grid-template-columns: repeat(2, 1fr);
-   margin-inline: auto;
-}
+@media (min-width: 515px) and (max-width: 1000px) {
+  .sortiment_grid--1 {
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: auto;
+  }
   .sortiment_grid--2 {
     grid-template-columns: repeat(2, 1fr);
-     margin-inline: auto;
+    margin-inline: auto;
+  }
+  .sortiment_img {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-left: 0rem;
   }
 }
 
-
-@media (max-width: 515px){
-
-.sortiment_grid--1 {
-  grid-template-columns: repeat(1, 1fr);
-   margin-inline: auto;
-}
+@media (max-width: 515px) {
+  .sortiment_grid--1 {
+    grid-template-columns: repeat(1, 1fr);
+    margin-inline: auto;
+  }
   .sortiment_grid--2 {
     grid-template-columns: repeat(1, 1fr);
-     margin-inline: auto;
+    margin-inline: auto;
   }
-
+  .sortiment_img {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin-left: 0rem;
+  }
 }
