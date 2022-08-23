@@ -1,0 +1,134 @@
+.reference_podlahy_col{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reference_podlahy_col a{
+  text-decoration: none;
+  text-align: center;
+font: normal normal bold 22px/50px Inter;
+letter-spacing: 0px;
+color: #1F1A17;
+text-transform: uppercase;
+}
+
+.reference_podlahy_box h3{
+  position: absolute;
+  text-align: center;
+font: normal normal 800 25px/30px Inter;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: uppercase;
+}
+
+.reference_podlahy_box{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reference_podlahy_{
+  background-color: #F7F7F7;
+}
+
+.reference_selection_box{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+.reference_example_box h3{
+text-align: left;
+font: normal normal 800 20px/30px Inter;
+letter-spacing: 0px;
+color: #1F1A17;
+text-transform: uppercase;
+margin-bottom: 0;
+
+}
+
+.reference_example_box p{
+text-align: left;
+font: normal normal 400 16px/30px Inter;
+letter-spacing: 0px;
+color: #1F1A17;
+text-transform: uppercase;
+margin: 0;
+}
+
+.reference_section_header{
+  text-align: center;
+font: normal normal 800 40px/50px Inter;
+letter-spacing: 0px;
+color: #DA251D;
+text-transform: uppercase;
+padding-bottom: 2rem;
+padding-top: 2rem;
+}
+
+.reference_section_underheader{
+text-align: center;
+font: normal normal 400 30px/50px Inter;
+letter-spacing: 0px;
+color: #1F1A17;
+text-transform: uppercase;
+padding-bottom: 2rem;
+
+}
+
+.reference_grid{
+      display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 5rem;
+}
+
+.realizace_interactive_container{
+    width: 383px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.reference_container_text{
+  text-align: center;
+text-decoration: underline;
+font: normal normal 800 18px/21px Inter;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+text-transform: uppercase;
+}
+
+.flex--col{
+  flex-direction: column;
+}
+
+.reference_example_box--terasy h3{
+position: absolute;
+  text-align: left;
+font: normal normal 800 25px/30px Inter;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: uppercase;
+padding-left: 1rem;
+}
+
+.reference_selection_box--terasy{
+  display: grid;
+    flex-direction: row;
+   justify-content: space-between;
+    height: 100%;
+    
+}
+
+.reference_grid--terasy{
+  gap: 1rem;
+}
+
+.reference_example_box--terasy{
+  display: flex;
+  align-items: center;
+}

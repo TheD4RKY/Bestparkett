@@ -1,0 +1,25 @@
+.bounce__word{
+  white-space: nowrap;
+}
+
+.bounce__elem{
+  display: inline-block;
+}
+.bounce:hover,
+.bounce:focus{
+  outline: unset;
+}
+.bounce:hover .bounce__elem,
+.bounce:focus .bounce__elem{
+  animation-name: bounce;
+  animation-duration: 1.2s;
+}
+.bounce:focus .bounce__elem{
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-0.2em);}
+  60% {transform: translateY(-0.1em);}
+}

@@ -1,0 +1,58 @@
+.resp-menu {}
+
+.resp-menu__button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50px;
+  cursor: pointer;
+}
+
+.resp-menu__button__line {
+  display: block;
+  position: relative;
+  height: 3px;
+  margin: 5px 0;
+  border-radius: 10px;
+  background: black;
+  transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.resp-menu__button--not-active .resp-menu__button__line--top {
+  width: 85%;
+}
+
+.resp-menu__button--not-active .resp-menu__button__line--middle {
+  width: 100%;
+}
+
+.resp-menu__button--not-active .resp-menu__button__line--bottom {
+  width: 75%;
+}
+
+.resp-menu__button--active {
+  align-items: initial;
+}
+
+.resp-menu__button--active .resp-menu__button__line--top {
+  transform-origin: bottom;
+  width: 50%;
+  transform: rotatez(45deg) translate(4px, 0px);
+}
+
+.resp-menu__button--active .resp-menu__button__line--middle {
+  transform-origin: top;
+  transform: rotatez(-45deg)
+}
+
+.resp-menu__button--active .resp-menu__button__line--bottom {
+  transform-origin: bottom;
+  width: 55%;
+  transform: translate(20px, -5px) rotatez(45deg);
+}
+
+
+/* .resp-menu__button--not-active:hover .resp-menu__button__line--bottom {
+  width: 50%;
+} */

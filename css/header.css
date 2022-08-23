@@ -32,6 +32,9 @@
 .header_box_underdiv img {
   position: absolute;
   z-index: -1;
+      width: inherit;
+    height: inherit;
+    object-fit: cover;
 }
 
 .header_box_underdiv {
