@@ -1,0 +1,300 @@
+.contact_companyinfo{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact_companyinfo h2{
+  text-align: center;
+font: normal normal 800 45px/50px Inter;
+letter-spacing: 0px;
+color: #DA251D;
+text-transform: uppercase;
+opacity: 1;
+}
+
+.contact_companyinfo p{
+  text-align: center;
+font: normal normal normal 18px/25px Inter;
+letter-spacing: 0px;
+color: #1F1A17;
+opacity: 1;
+}
+
+.contact_cards_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 3rem;
+  column-gap: 1rem;
+}
+
+.contact_card{
+  width: 390px;
+  height: 390px;
+  background-color: white;
+  display: flex;
+    flex-direction: column;
+  margin-inline: auto;
+    align-items: center;
+}
+
+.contact_card h2{
+  text-align: center;
+font: normal normal bold 20px/25px Inter;
+letter-spacing: 0px;
+color: #FF6433;
+opacity: 1;
+margin: 0;
+padding-top: 11rem;
+}
+
+.contact_card h3{
+  text-align: center;
+font: normal normal bold 18px/29px Inter;
+letter-spacing: 0px;
+color: #FF6433;
+opacity: 1;
+margin: 0;
+}
+
+.contact_card p{
+  text-align: center;
+font: normal normal normal 18px/20px Inter;
+letter-spacing: 0px;
+color: #454545;
+opacity: 1;
+margin: 0;
+}
+
+.contact_card a{
+  text-align: center;
+text-decoration: underline;
+font: normal normal bold 22px/25px Inter;
+letter-spacing: 0px;
+color: #454545;
+opacity: 1;
+}
+.contact_card img{
+  position: absolute;
+
+}
+
+.contact_showroomdetail h3{
+text-align: left;
+font: normal normal 800 22px/50px Inter;
+letter-spacing: 0px;
+color: #DA251D;
+text-transform: uppercase;
+opacity: 1;
+margin: 0;
+}
+.contact_showroom--img{
+  padding-right: 3rem;
+}
+.contact_showroomdetail p{
+  text-align: left;
+font: normal normal normal 18px/25px Inter;
+letter-spacing: 0px;
+color: #1F1A17;
+  margin: 0;
+}
+.contact_showroomdetail--trasa{
+  text-align: left;
+text-decoration: underline;
+font: normal normal bold 22px/50px Inter;
+letter-spacing: 0px;
+color: #DA251D;
+opacity: 1;
+text-transform: uppercase;
+
+}
+
+.contact_showroomdetail--kontakt{
+  text-align: left;
+font: normal normal 800 18px/55px Inter;
+letter-spacing: 0px;
+color: #1F1A17;
+opacity: 1;
+padding-left: 1rem;
+}
+
+.contact_showroomdetail--kontakt-align{
+  display: flex;
+}
+
+.contact_navigation{
+  justify-content: space-evenly;
+    padding: 4rem 2rem 4rem 2rem;
+    display: flex; flex-direction:row;
+}
+
+.contact_navigation--text{
+text-align: left;
+font: normal normal 500 25px/50px Inter;
+letter-spacing: 0px;
+color: #1F1A17;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.contact_navigation--text:hover{
+  text-decoration: underline;
+}
+
+.contact_navigation--text-active{
+text-align: left;
+text-decoration: underline;
+font: normal normal 800 25px/50px Inter;
+letter-spacing: 0px;
+color: #DA251D;
+text-transform: uppercase;
+opacity: 1;
+}
+
+.contact_nadpis{
+  margin-inline: auto;
+  text-align: left;
+font: normal normal 800 45px/50px Inter;
+letter-spacing: 0px;
+color: #DA251D;
+text-transform: uppercase;
+opacity: 1;
+margin-top: 5rem;
+margin-bottom: 0rem;
+}
+
+.above_bsparkett{
+  transform: translate(100px, -300px);
+      width: 90%;
+    display: flex;
+    justify-content: start;
+}
+
+.above_bsparkett img{
+      position: absolute;
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 736px;
+    
+    width: 90%;
+}
+
+.contact_showroomdetail{
+  flex-direction: row;
+}
+
+@media (min-width:1050px) and (max-width:1358px) {
+  .contact_card{
+    width: 300px;
+  }
+
+ 
+}
+
+
+@media (min-width:659px) and (max-width:1050px){
+  .contact_card{
+   width: 300px;
+  }
+
+  .contact_cards_grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+   .contact_showroomdetail{
+    flex-direction: column;
+  }
+.contact_showroom_img_container{
+  margin-inline: auto;
+}
+
+.above_bsparkett{
+  transform: translate(0px, -100px);
+}
+}
+
+@media (max-width:659px){
+  .contact_cards_grid{
+    grid-template-columns: 1fr;
+  }
+
+  .contact_card{
+   width: 300px;
+  }
+
+   .contact_showroomdetail{
+    flex-direction: column;
+  }
+
+  .contact_showroom_img_container{
+  margin-inline: auto;
+      align-items: center;
+    display: flex;
+}
+
+.contact_align{
+  flex-direction: column !important;
+  align-items: center;
+}
+
+.contact_showroomdetail p{
+  text-align: center;
+  margin-inline: auto;
+}
+
+.contact_showroomdetail a{
+  text-align: center;
+  margin-inline: auto;
+}
+
+.contact_showroomdetail h2{
+  text-align: center;
+}
+
+.contact_showroomdetail h3{
+  text-align: center;
+}
+
+.contact_showroomdetail{
+  margin-inline: auto;
+}
+.contact_showroom--img{
+  padding: 0;
+}
+
+.above_bsparkett{
+  transform: translate(0px, -100px);
+}
+
+.contact_showroom--img{
+  width: 80%;
+  margin-inline: auto;
+}
+.contact_showroomdetail--kontakt-align img{
+  display: none;
+}
+
+.ke_stazeni_header div h1{
+  font: normal normal 800 55px/77px Inter;
+}
+
+.contact_nadpis{
+  text-align: center;
+  font: normal normal 800 40px/50px Inter;
+}
+
+.contact_navigation{
+  margin-inline: auto;
+    flex-direction: column;
+    
+}
+.contact_showroomdetail--kontakt{
+  padding: 0;
+}
+.contact_navigation--text {
+  text-align: center;
+}
+.contact_navigation--text-active {
+  text-align: center;
+}
+}
