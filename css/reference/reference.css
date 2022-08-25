@@ -27,6 +27,7 @@ text-transform: uppercase;
   display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .reference_podlahy_{
@@ -34,7 +35,8 @@ text-transform: uppercase;
 }
 
 .reference_selection_box{
-  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
     flex-direction: row;
     justify-content: space-between;
     height: 100%;
@@ -131,4 +133,52 @@ padding-left: 1rem;
 .reference_example_box--terasy{
   display: flex;
   align-items: center;
+      width: 100%;
+}
+
+.reference_podlahy_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.reference_example_box{
+  width: 100%;
+}
+
+
+.reference_podlahy_{
+  width: 100%;
+
+}
+.reference_podlahy_ img{
+  width: inherit;
+
+}
+
+.reference_example_box img{
+  width: inherit;
+}
+@media (min-width:500px) and (max-width:1000px) {
+  .reference_podlahy_grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reference_selection_box{
+    grid-template-columns: 1fr 1fr;
+  }
+  .reference_grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:500px) {
+     .reference_podlahy_grid{
+    grid-template-columns: 1fr;
+  }
+   .reference_selection_box{
+    grid-template-columns: 1fr;
+  }
+  .reference_grid{
+    grid-template-columns: 1fr;
+  }
 }
